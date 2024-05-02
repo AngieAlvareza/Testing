@@ -1,6 +1,6 @@
 class Cliente:
     def __init__(self):
-        self.nombre = "Angie"
+        self.nombre = ""
         self.direccion = ""
         self.telefono = ""
         self.dni = ""
