@@ -5,32 +5,31 @@ body {
   font-family: sans-serif;
 }
 
-/* Estilo para la cabecera */
 header {
   padding: 1rem 2rem;
-  background-color: #f0f0f0;
-  display: flex; /* Esto es para asegurar que los elementos secundarios estén en una fila */
-  justify-content: space-between; /* Esto distribuye los elementos en la fila */
-  align-items: center; /* Esto alinea verticalmente los elementos */
+  background-color: #074467;
+  color: #fff;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
 }
 
-/* Estilo para el contenedor de la cabecera */
 .header-grid {
   display: flex;
   width: 100%;
-  justify-content: space-between; /* Esto distribuye los elementos de forma uniforme en la fila */
-  align-items: center; /* Esto alinea verticalmente los elementos */
+  justify-content: space-between;
+  align-items: center; 
 }
 
-/* Estilo para los elementos de la cabecera */
+
 .header-item {
-  margin: 0 1rem; /* Esto agrega espacio entre los elementos */
+  margin: 0 1rem; 
   text-align: center;
 }
 
 h1 {
   margin: 0;
-  text-align: left; /* Alinea el título a la izquierda */
+  text-align: left; 
 }
 
 .main {
@@ -46,18 +45,20 @@ h1 {
 }
 
 table {
-  width: 100%; /* Make the table occupy full width */
+  width: 100%; 
   border-collapse: collapse;
 }
 
 th, td {
   padding: 0.5rem 1rem;
-  border: 1px solid #ddd;
+  background-color: #074467;
+  border: 1px solid ;
+  color: #fff;
   text-align: left;
 }
 
 th {
-  background-color: #f0f0f0;
+  background-color: #074467;
   font-weight: bold;
 }
 
@@ -92,7 +93,7 @@ th {
   display: block;
   margin: 1rem auto;
   padding: 1rem 2rem;
-  background-color: #007bff;
+  background-color: #074467;
   color: #fff;
   border: none;
   border-radius: 5px;
