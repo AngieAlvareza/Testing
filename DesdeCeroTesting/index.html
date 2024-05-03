@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bodega</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header" data-header>
+    <div class="container">
+      <div class="overlay" data-overlay></div>
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" alt="Bodega logo">
+      </a>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li><a href="#home" class="navbar-link" data-nav-link>Bodega</a></li>
+          <li><a href="login.html" class="navbar-link" data-nav-link>Iniciar Sesión</a></li>
+          <li><a href="#featured-car" class="navbar-link" data-nav-link>Explorar Sucursales</a></li>
+          <li><a href="#" class="navbar-link" data-nav-link>Sobre Nosotros</a></li>
+          <li><a href="#blog" class="navbar-link" data-nav-link>Blog</a></li>
+          <li><a href="historial.html" class="navbar-link" data-nav-link>Carrito de Compras</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <div class="header-contact">
+          <a href="tel:88002345678" class="contact-link">+51 945134723</a>
+          <span class="contact-time">Mon - Sat: 9:00 am - 6:00 pm</span>
+        </div>
+        <a href="#featured-car" class="btn" aria-labelledby="aria-label-txt">
+          <ion-icon name="car-outline"></ion-icon>
+          <span id="aria-label-txt">Sucursal</span>
+        </a>
+        <a href="profile2.html" class="btn user-btn" aria-label="Profile">
+          <ion-icon name="person-outline"></ion-icon>
+        </a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <article>
+      <section class="section hero" id="home">
+        <div class="container">
+          <div class="hero-content">
+            <h2 class="h1 hero-title">Héritage d'Or</h2>
+            <p class="hero-text">¡Bienvenido a D'OR! Explora nuestra selección de vinos de calidad excepcional y descubre nuevas historias en cada botella.</p>
+          </div>
+          <div class="hero-banner"></div>
+          <form action="" class="hero-form">
+            <div class="input-wrapper">
+              <label for="input-1" class="input-label">Sucursal</label>
+              <input type="text" name="car-model" id="input-1" class="input-field" placeholder="Ponga una Sucursal">
+            </div>
+            <div class="input-wrapper">
+              <label for="input-2" class="input-label">Producto</label>
+              <input type="text" name="monthly-pay" id="input-2" class="input-field" placeholder="Ingrese un Producto">
+            </div>
+            <div class="input-wrapper">
+              <label for="input-3" class="input-label">Categoria</label>
+              <input type="text" name="year" id="input-3" class="input-field" placeholder="Ingrese una Categoria">
+            </div>
+            <button type="submit" class="btn">Buscar</button>
+          </form>
+        </div>
+      </section>
+      <section class="section featured-car" id="featured-car">
+        <div class="container">
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Sucursal</h2>
+            <a href="#" class="featured-car-link">
+              <span>Ver mas</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+          </div>
+          <ul class="featured-car-list">
+            <li>
+              <div class="featured-car-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/vinoborgonia.png" alt="Vino Borgonia" loading="lazy" width="440" height="300" class="w-100">
+                </figure>
+                <div class="card-content">
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title"><a href="#">VINO TINTO BORGOÑA SEMI SECO COPELLO - BOTELLA 750 ML</a></h3>
+                    <data class="year" value="2021">OFERTA</data>
+                  </div>
+                  <ul class="card-list">
+                    <li class="card-list-item"><ion-icon name="people-outline"></ion-icon><span class="card-item-text">4 Sucursales</span></li>
+                  </ul>
+                  <div class="card-price-wrapper">
+                    <p class="card-price"><strong>4 Sucursales</strong> /22</p>
+                    <button class="btn fav-btn" aria-label="Add to favourite list"><ion-icon name="heart-outline"></ion-icon></button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" alt="Bodega Logo">
+          </a>
+          <p class="footer-text">Dejanos tus comentarios</p>
+        </div>
+        <ul
