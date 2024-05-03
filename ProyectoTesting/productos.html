@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Vinos</title>
+    <link rel="stylesheet" href="./assets/css/productos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+</head>
+<body>
+    <header class="header" data-header>
+        <div class="container">
+    
+          <div class="overlay" data-overlay></div>
+    
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" alt="Ridex logo">
+          </a>
+    
+          <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+    
+              <li>
+                <a href="index.html" class="navbar-link" data-nav-link>Bodega</a>
+              </li>
+    
+              <li>
+                <a href="#blog" class="navbar-link" data-nav-link>Categorias</a>
+              </li>
+              
+    
+              <li>
+                <a href="#featured-car" class="navbar-link" data-nav-link>Explorar Sucursales</a>
+              </li>
+    
+              <li>
+                <a href="#" class="navbar-link" data-nav-link>Sobre Nosotros</a>
+              </li>
+    
+              <li>
+                <a href="productos.html" class="navbar-link" data-nav-link>Productos</a>
+              </li>
+    
+              <li>
+                <a href="historial.html" class="navbar-link" data-nav-link>Mis compras</a>
+              </li>
+              
+    
+            </ul>
+          </nav>
+    
+          <div class="header-actions">
+    
+            
+    
+            <a href="carritoDeCompras.html" class="btn" aria-labelledby="aria-label-txt">
+              <ion-icon name="car-outline"></ion-icon>
+    
+              <span id="aria-label-txt">Carrito de Compras</span>
+              
+            </a>
+    
+            <a href="login.html" class="btn user-btn" aria-label="Profile">
+              <ion-icon name="person-outline"></ion-icon>
+            </a>
+    
+            <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+              <span class="one"></span>
+              <span class="two"></span>
+              <span class="three"></span>
+            </button>
+    
+          </div>
+    
+        </div>
+      </header>
+
+
+      <main>
+        <article>
+    
+          <!-- 
+            - #HERO
+          -->
+    
+          <section class="section hero" id="home">
+            <div class="container">
+    
+              <div class="hero-content">
+                <h2 class="h1 hero-title">Bodega Héritage d'Or</h2>
+    
+                <p class="hero-text">
+                  ¡Bienvenido a DOR! Explora nuestra selección de vinos de calidad.
+                </p>
+              </div>
+    
+              <div class="hero-banner"></div>
+    
+              <form action="" class="hero-form">
+    
+                
+    
+               
+                
+              
+                
+    
+              </form>
+    
+            </div>
+          </section>
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Barra de búsqueda  -->
+    <input type="text" id="busqueda" placeholder="Buscar por nombre..." onkeyup="buscarVinos()">
+
+    <!-- Lista de vinos -->
+    <ul id="listaVinos">
+        
+        <li>Vino Tinto Barbera - Precio: $20 <button onclick="agregarAlCarrito('Vino Tinto Barbera', 20)">Agregar al carrito</button></li>
+        <li>Vino Tinto Barbera - Precio: $80 <button onclick="agregarAlCarrito('Vino Tinto Barbera', 80)">Agregar al carrito</button></li>
+        <li>Vino Blanco Vermentino - Precio: $65 <button onclick="agregarAlCarrito('Vino Blanco Vermentino', 65)">Agregar al carrito</button></li>
+        <li>Vino Rosado Tempranillo Garnacha - Precio: $58 <button onclick="agregarAlCarrito('Vino Rosado Tempranillo Garnacha', 58)">Agregar al carrito</button></li>
+        <li>Vino Espumoso Moscato - Precio: $75 <button onclick="agregarAlCarrito('Vino Espumoso Moscato', 75)">Agregar al carrito</button></li>
+        <li>Vino Tinto Carmenere - Precio: $70 <button onclick="agregarAlCarrito('Vino Tinto Carmenere', 70)">Agregar al carrito</button></li>
+        <li>Vino Blanco Torrontés - Precio: $90 <button onclick="agregarAlCarrito('Vino Blanco Torrontés', 90)">Agregar al carrito</button></li>
+        <li>Vino Rosado Cinsault - Precio: $55 <button onclick="agregarAlCarrito('Vino Rosado Cinsault', 55)">Agregar al carrito</button></li>
+        <li>Vino Espumoso Lambrusco Rosato - Precio: $85 <button onclick="agregarAlCarrito('Vino Espumoso Lambrusco Rosato', 85)">Agregar al carrito</button></li>
+        <li>Vino Tinto Primitivo - Precio: $60 <button onclick="agregarAlCarrito('Vino Tinto Primitivo', 60)">Agregar al carrito</button></li>
+        <li>Vino Blanco Marsanne - Precio: $70 <button onclick="agregarAlCarrito('Vino Blanco Marsanne', 70)">Agregar al carrito</button></li>
+        <li>Vino Rosado Mourvèdre - Precio: $65 <button onclick="agregarAlCarrito('Vino Rosado Mourvèdre', 65)">Agregar al carrito</button></li>
+        <li>Vino Espumoso Brachetto d'Acqui - Precio: $80 <button onclick="agregarAlCarrito('Vino Espumoso Brachetto dAcqui', 80)">Agregar al carrito</button></li>
+        <li>Vino Tinto Bonarda - Precio: $75 <button onclick="agregarAlCarrito('Vino Tinto Bonarda', 75)">Agregar al carrito</button></li>
+        <li>Vino Blanco Garganega - Precio: $60 <button onclick="agregarAlCarrito('Vino Blanco Garganega', 60)">Agregar al carrito</button></li>
+        <li>Vino Rosado Bobal - Precio: $70 <button onclick="agregarAlCarrito('Vino Rosado Bobal', 70)">Agregar al carrito</button></li>
+        <li>Vino Espumoso Franciacorta - Precio: $85 <button onclick="agregarAlCarrito('Vino Espumoso Franciacorta', 85)">Agregar al carrito</button></li>
+        <li>Vino Tinto Nero d'Avola - Precio: $80 <button onclick="agregarAlCarrito('Vino Tinto Nero dAvola', 80)">Agregar al carrito</button></li>
+        <li>Vino Blanco Falanghina - Precio: $55 <button onclick="agregarAlCarrito('Vino Blanco Falanghina', 55)">Agregar al carrito</button></li>
+        <li>Vino Rosado Carignan - Precio: $65 <button onclick="agregarAlCarrito('Vino Rosado Carignan', 65)">Agregar al carrito</button></li>
+        <li>Vino Espumoso Blanc de Noirs - Precio: $75 <button onclick="agregarAlCarrito('Vino Espumoso Blanc de Noirs', 75)">Agregar al carrito</button></li>
+        <li>Vino Tinto Malbec - Precio: $90 <button onclick="agregarAlCarrito('Vino Tinto Malbec', 90)">Agregar al carrito</button></li>
+        <li>Vino Blanco Sauvignon Blanc - Precio: $80 <button onclick="agregarAlCarrito('Vino Blanco Sauvignon Blanc', 80)">Agregar al carrito</button></li>
+        <li>Vino Rosado Pinot Noir - Precio: $55 <button onclick="agregarAlCarrito('Vino Rosado Pinot Noir', 55)">Agregar al carrito</button></li>
+        <li>Vino Espumoso Prosecco - Precio: $65 <button onclick="agregarAlCarrito('Vino Espumoso Prosecco', 65)">Agregar al carrito</button></li>
+        <li>Vino Tinto Shiraz/Syrah - Precio: $70 <button onclick="agregarAlCarrito('Vino Tinto Shiraz/Syrah', 70)">Agregar al carrito</button></li>
+        <li>Vino Blanco Riesling - Precio: $80 <button onclick="agregarAlCarrito('Vino Blanco Riesling', 80)">Agregar al carrito</button></li>
+        <li>Vino Rosado Zinfandel - Precio: $60 <button onclick="agregarAlCarrito('Vino Rosado Zinfandel', 60)">Agregar al carrito</button></li>
+        <li>Vino Espumoso Cava - Precio: $85 <button onclick="agregarAlCarrito('Vino Espumoso Cava', 85)">Agregar al carrito</button></li>
+        <li>Vino Tinto Tempranillo - Precio: $55 <button onclick="agregarAlCarrito('Vino Tinto Tempranillo', 55)">Agregar al carrito</button></li>
+        <li>Vino Blanco Pinot Grigio - Precio: $65 <button onclick="agregarAlCarrito('Vino Blanco Pinot Grigio', 65)">Agregar al carrito</button></li>
+        <li>Vino Rosado Grenache/Garnacha - Precio: $75 <button onclick="agregarAlCarrito('Vino Rosado Grenache/Garnacha', 75)">Agregar al carrito</button></li>
+        <li>Vino Espumoso Asti - Precio: $90 <button onclick="agregarAlCarrito('Vino Espumoso Asti', 90)">Agregar al carrito</button></li>
+        <li>Vino Tinto Rioja - Precio: $85 <button onclick="agregarAlCarrito('Vino Tinto Rioja', 85)">Agregar al carrito</button></li>
+        <li>Vino Blanco Gewürztraminer - Precio: $60 <button onclick="agregarAlCarrito('Vino Blanco Gewürztraminer', 60)">Agregar al carrito</button></li>
+        <li>Vino Rosado Cabernet Franc - Precio: $70 <button onclick="agregarAlCarrito('Vino Rosado Cabernet Franc', 70)">Agregar al carrito</button></li>
+        <li>Vino Espumoso Lambrusco - Precio: $80 <button onclick="agregarAlCarrito('Vino Espumoso Lambrusco', 80)">Agregar al carrito</button></li>
+        <li>Vino Tinto Sangiovese - Precio: $90 <button onclick="agregarAlCarrito('Vino Tinto Sangiovese', 90)">Agregar al carrito</button></li>
+        <li>Vino Blanco Viognier - Precio: $75 <button onclick="agregarAlCarrito('Vino Blanco Viognier', 75)">Agregar al carrito</button></li>
+        <li>Vino Rosado White Zinfandel - Precio: $60 <button onclick="agregarAlCarrito('Vino Rosado White Zinfandel', 60)">Agregar al carrito</button></li>
+        <li>Vino Espumoso Blanc de Blancs - Precio: $85 <button onclick="agregarAlCarrito('Vino Espumoso Blanc de Blancs', 85)">Agregar al carrito</button></li>
+        <li>Vino Tinto Nebbiolo - Precio: $70 <button onclick="agregarAlCarrito('Vino Tinto Nebbiolo', 70)">Agregar al carrito</button></li>
+        <li>Vino Blanco Albariño - Precio: $80 <button onclick="agregarAlCarrito('Vino Blanco Albariño', 80)">Agregar al carrito</button></li>
+            
+          </ul>
+
+    <!-- Carrito de compras -->
+    <h2>Carrito de Compras</h2>
+    <ul id="carrito"></ul>
+    <div id="totalContainer">Total: $0</div>
+    <button onclick="pagar()" id="pagarButton">Pagar</button>
+
+    <script>
+        // Función para filtrar los vinos por nombre
+        function buscarVinos() {
+            // Obtiene el texto ingresado en la barra de búsqueda
+            var input = document.getElementById('busqueda');
+            var filtro = input.value.toUpperCase();
+
+            // Obtiene la lista de vinos
+            var lista = document.getElementById('listaVinos');
+            var vinos = lista.getElementsByTagName('li');
+
+            // Itera sobre los vinos y muestra u oculta según el filtro
+            for (var i = 0; i < vinos.length; i++) {
+                var nombre = vinos[i].textContent || vinos[i].innerText;
+                if (nombre.toUpperCase().indexOf(filtro) > -1) {
+                    vinos[i].style.display = "";
+                } else {
+                    vinos[i].style.display = "none";
+                }
+            }
+        }
+
+        // Función para agregar un vino al carrito de compras
+        function agregarAlCarrito(nombreVino, precioVino) {
+            // Crea un nuevo elemento de lista para el carrito
+            var item = document.createElement('li');
+            item.textContent = nombreVino + " - Precio: $" + precioVino;
+
+            // Agrega el elemento al carrito de compras
+            var carrito = document.getElementById('carrito');
+            carrito.appendChild(item);
+
+            // Actualiza el total
+            actualizarTotal(precioVino);
+        }
+
+        // Función para actualizar el total en el carrito
+        function actualizarTotal(precio) {
+            // Encuentra el elemento que muestra el total
+            var totalContainer = document.getElementById('totalContainer');
+
+            // Si el elemento ya existe, actualiza el total
+            if (totalContainer) {
+                var total = totalContainer.textContent ? parseInt(totalContainer.textContent.replace('Total: $', '')) : 0;
+                total += precio;
+                totalContainer.textContent = 'Total: $' + total;
+            } else {
+                // Si no existe, crea uno nuevo
+                totalContainer = document.createElement('div');
+                totalContainer.textContent = 'Total: $' + precio;
+                totalContainer.id = 'totalContainer';
+                document.body.appendChild(totalContainer);
+            }
+        }
+        function pagar() {
+        // Obtener el total actual
+        var totalContainer = document.getElementById('totalContainer');
+        var total = totalContainer.textContent.replace('Total: $', '');
+        
+        // Mostrar mensaje de pago
+        alert("Total a pagar: $" + total + ". ¡Gracias por tu compra!");
+        
+        // Limpiar el carrito
+        var carrito = document.getElementById('carrito');
+        carrito.innerHTML = "";
+        
+        // Reiniciar el total a $0
+        totalContainer.textContent = 'Total: $0';
+    }
+
+
+    </script>
+
+
+
+
+    
+ 
+
+           
+      
+
+
+
+
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" alt="Ridex logo">
+          </a>
+
+          <p class="footer-text">
+            Héritage d’Or: Elegancia en cada gota de vino
+          </p>
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Compañia</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Sobre nosotros</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Categorias</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Nuestro Blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contacto</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Ayuda</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Centro de ayuda</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Preguntas</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Politica de privacidad</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Términos y Condiciones</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Otras surcursales</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">JLBYR</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Yanahuara</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Cayma</a>
+          </li>
+
+         
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-skype"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <p class="copyright">
+          &copy; 2023 <a href="#">Copyright AAA</a>. All Rights Reserved
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+
+</body>
+</html>
+
+
+   
