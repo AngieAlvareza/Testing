@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Módulo de Compras - Bodega</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Módulo de Compras</h1>
+
+        <!-- Formulario para realizar pedidos -->
+        <form id="purchaseForm">
+            <h2>Realizar Pedido</h2>
+
+            <label for="provider">Proveedor:</label>
+            <input type="text" id="provider" name="provider" required>
+
+            <label for="product">Producto:</label>
+            <input type="text" id="product" name="product" required>
+
+            <label for="quantity">Cantidad:</label>
+            <input type="number" id="quantity" name="quantity" required>
+
+            <label for="price">Precio:</label>
+            <input type="number" id="price" name="price" required>
+
+            <button type="submit">Enviar Pedido</button>
+        </form>
+
+        <!-- Tabla para mostrar el historial de compras -->
+        <h2>Historial de Compras</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Proveedor</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody id="purchaseHistory">
+                <!-- Los datos se insertarán aquí dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
