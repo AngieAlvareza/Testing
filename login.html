@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    
+    <script>
+        function validarFormulario() {
+            var usuario = document.getElementById("usuario").value;
+            var contrasenia = document.getElementById("contrasenia").value;
+        
+            // Verificar si el usuario y la contraseña son correctos
+            if (usuario === "admin" && contrasenia === "admin") {
+                // Redirigir al usuario a la página deseada
+                return true;
+            } else {
+                alert("Usuario o contraseña incorrectos. Por favor, inténtalo de nuevo.");
+                return false; // Evita el envío del formulario si las credenciales son incorrectas
+            }
+        }
+    </script>
+
+    <div class="formulario">
+        <h1>Inicio de Sesión</h1>
+        
+        <form method="post" action="profile2.html" onsubmit="return validarFormulario()">
+
+            <div class="username">
+                <input type="text" id="usuario" name="usuario" required placeholder="Nombre de usuario">
+            </div>
+            <div class="contrasena">
+                <input type="password" id="contrasenia" name="contrasenia" required placeholder="Contraseña">
+            </div>
+            <div class="recordar">¿Olvidó su contraseña?</div>
+            <input type="submit" value="Iniciar">
+            <div class="registrarse">
+                ¿Quiere registrarse? <a href="#">Registro</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
