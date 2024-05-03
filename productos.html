@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Vinos</title>
+    <link rel="stylesheet" href="./assets/css/productos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+</head>
+<body>
+    <header class="header" data-header>
+        <div class="container">
+    
+          <div class="overlay" data-overlay></div>
+    
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" alt="Ridex logo">
+          </a>
+    
+          <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+    
+              <li>
+                <a href="#home" class="navbar-link" data-nav-link>Bodega</a>
+              </li>
+    
+              <li>
+                <a href="#blog" class="navbar-link" data-nav-link>Categorias</a>
+              </li>
+              
+    
+              <li>
+                <a href="#featured-car" class="navbar-link" data-nav-link>Explorar Sucursales</a>
+              </li>
+    
+              <li>
+                <a href="#" class="navbar-link" data-nav-link>Sobre Nosotros</a>
+              </li>
+    
+              <li>
+                <a href="productos.html" class="navbar-link" data-nav-link>Productos</a>
+              </li>
+    
+              <li>
+                <a href="historial.html" class="navbar-link" data-nav-link>Mis compras</a>
+              </li>
+              
+    
+            </ul>
+          </nav>
+    
+          <div class="header-actions">
+    
+            
+    
+            <a href="carritoDeCompras.html" class="btn" aria-labelledby="aria-label-txt">
+              <ion-icon name="car-outline"></ion-icon>
+    
+              <span id="aria-label-txt">Carrito de Compras</span>
+              
+            </a>
+    
+            <a href="login.html" class="btn user-btn" aria-label="Profile">
+              <ion-icon name="person-outline"></ion-icon>
+            </a>
+    
+            <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+              <span class="one"></span>
+              <span class="two"></span>
+              <span class="three"></span>
+            </button>
+    
+          </div>
+    
+        </div>
+      </header>
+
+
+      <main>
+        <article>
+    
+          <!-- 
+            - #HERO
+          -->
+    
+          <section class="section hero" id="home">
+            <div class="container">
+    
+              <div class="hero-content">
+                <h2 class="h1 hero-title">Bodega Héritage d'Or</h2>
+    
+                <p class="hero-text">
+                  ¡Bienvenido a DOR! Explora nuestra selección de vinos de calidad.
+                </p>
+              </div>
+    
+              <div class="hero-banner"></div>
+    
+              <form action="" class="hero-form">
+    
+                
+    
+               
+                
+              
+                
+    
+              </form>
+    
+            </div>
+          </section>
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Barra de búsqueda -->
+    <input type="text" id="busqueda" placeholder="Buscar por nombre..." onkeyup="buscarVinos()">
+
+    <!-- Lista de vinos -->
+    <ul id="listaVinos">
+        <li>Vino Tinto Barbera <button onclick="agregarAlCarrito('Vino Tinto Barbera')">Agregar al carrito</button></li>
+        <li>Vino Blanco Vermentino <button onclick="agregarAlCarrito('Vino Blanco Vermentino')">Agregar al carrito</button></li>
+        <li>Vino Rosado Tempranillo Garnacha <button onclick="agregarAlCarrito('Vino Rosado Tempranillo Garnacha')">Agregar al carrito</button></li>
+        <li>Vino Espumoso Moscato <button onclick="agregarAlCarrito('Vino Espumoso Moscato')">Agregar al carrito</button></li>
+        <li>Vino Tinto Carmenere <button onclick="agregarAlCarrito('Vino Tinto Carmenere')">Agregar al carrito</button></li>
+        <li>Vino Blanco Torrontés <button onclick="agregarAlCarrito('Vino Blanco Torrontés')">Agregar al carrito</button></li>
+        <li>Vino Rosado Cinsault <button onclick="agregarAlCarrito('Vino Rosado Cinsault')">Agregar al carrito</button></li>
+        <li>Vino Espumoso Lambrusco Rosato <button onclick="agregarAlCarrito('Vino Espumoso Lambrusco Rosato')">Agregar al carrito</button></li>
+        <li>Vino Tinto Primitivo <button onclick="agregarAlCarrito('Vino Tinto Primitivo')">Agregar al carrito</button></li>
+        <li>Vino Blanco Marsanne <button onclick="agregarAlCarrito('Vino Blanco Marsanne')">Agregar al carrito</button></li>
+        <li>Vino Rosado Mourvèdre <button onclick="agregarAlCarrito('Vino Rosado Mourvèdre')">Agregar al carrito</button></li>
+        <li>Vino Espumoso Brachetto d'Acqui <button onclick="agregarAlCarrito('Vino Espumoso Brachetto dAcqui')">Agregar al carrito</button></li>
+        <li>Vino Tinto Bonarda <button onclick="agregarAlCarrito('Vino Tinto Bonarda')">Agregar al carrito</button></li>
+        <li>Vino Blanco Garganega <button onclick="agregarAlCarrito('Vino Blanco Garganega')">Agregar al carrito</button></li>
+        <li>Vino Rosado Bobal <button onclick="agregarAlCarrito('Vino Rosado Bobal')">Agregar al carrito</button></li>
+        <li>Vino Espumoso Franciacorta <button onclick="agregarAlCarrito('Vino Espumoso Franciacorta')">Agregar al carrito</button></li>
+        <li>Vino Tinto Nero d'Avola <button onclick="agregarAlCarrito('Vino Tinto Nero dAvola')">Agregar al carrito</button></li>
+        <li>Vino Blanco Falanghina <button onclick="agregarAlCarrito('Vino Blanco Falanghina')">Agregar al carrito</button></li>
+        <li>Vino Rosado Carignan <button onclick="agregarAlCarrito('Vino Rosado Carignan')">Agregar al carrito</button></li>
+        <li>Vino Espumoso Blanc de Noirs <button onclick="agregarAlCarrito('Vino Espumoso Blanc de Noirs')">Agregar al carrito</button></li>
+        <li>Vino Tinto Malbec <button onclick="agregarAlCarrito('Vino Tinto Malbec')">Agregar al carrito</button></li>
+        <li>Vino Blanco Sauvignon Blanc <button onclick="agregarAlCarrito('Vino Blanco Sauvignon Blanc')">Agregar al carrito</button></li>
+        <li>Vino Rosado Pinot Noir <button onclick="agregarAlCarrito('Vino Rosado Pinot Noir')">Agregar al carrito</button></li>
+        <li>Vino Espumoso Prosecco <button onclick="agregarAlCarrito('Vino Espumoso Prosecco')">Agregar al carrito</button></li>
+        <li>Vino Tinto Shiraz/Syrah <button onclick="agregarAlCarrito('Vino Tinto Shiraz/Syrah')">Agregar al carrito</button></li>
+        <li>Vino Blanco Riesling <button onclick="agregarAlCarrito('Vino Blanco Riesling')">Agregar al carrito</button></li>
+        <li>Vino Rosado Zinfandel <button onclick="agregarAlCarrito('Vino Rosado Zinfandel')">Agregar al carrito</button></li>
+        <li>Vino Espumoso Cava <button onclick="agregarAlCarrito('Vino Espumoso Cava')">Agregar al carrito</button></li>
+        <li>Vino Tinto Tempranillo <button onclick="agregarAlCarrito('Vino Tinto Tempranillo')">Agregar al carrito</button></li>
+        <li>Vino Blanco Pinot Grigio <button onclick="agregarAlCarrito('Vino Blanco Pinot Grigio')">Agregar al carrito</button></li>
+        <li>Vino Rosado Grenache/Garnacha <button onclick="agregarAlCarrito('Vino Rosado Grenache/Garnacha')">Agregar al carrito</button></li>
+        <li>Vino Espumoso Asti <button onclick="agregarAlCarrito('Vino Espumoso Asti')">Agregar al carrito</button></li>
+        <li>Vino Tinto Rioja <button onclick="agregarAlCarrito('Vino Tinto Rioja')">Agregar al carrito</button></li>
+        <li>Vino Blanco Gewürztraminer <button onclick="agregarAlCarrito('Vino Blanco Gewürztraminer')">Agregar al carrito</button></li>
+        <li>Vino Rosado Cabernet Franc <button onclick="agregarAlCarrito('Vino Rosado Cabernet Franc')">Agregar al carrito</button></li>
+        <li>Vino Espumoso Lambrusco <button onclick="agregarAlCarrito('Vino Espumoso Lambrusco')">Agregar al carrito</button></li>
+        <li>Vino Tinto Sangiovese <button onclick="agregarAlCarrito('Vino Tinto Sangiovese')">Agregar al carrito</button></li>
+        <li>Vino Blanco Viognier <button onclick="agregarAlCarrito('Vino Blanco Viognier')">Agregar al carrito</button></li>
+        <li>Vino Rosado White Zinfandel <button onclick="agregarAlCarrito('Vino Rosado White Zinfandel')">Agregar al carrito</button></li>
+        <li>Vino Espumoso Blanc de Blancs <button onclick="agregarAlCarrito('Vino Espumoso Blanc de Blancs')">Agregar al carrito</button></li>
+        <li>Vino Tinto Nebbiolo <button onclick="agregarAlCarrito('Vino Tinto Nebbiolo')">Agregar al carrito</button></li>
+        <li>Vino Blanco Albariño <button onclick="agregarAlCarrito('Vino Blanco Albariño')">Agregar al carrito</button></li>
+    </ul>
+
+    <!-- Carrito de compras -->
+    <h2>Carrito de Compras</h2>
+    <ul id="carrito"></ul>
+
+    <script>
+        // Función para filtrar los vinos por nombre
+        function buscarVinos() {
+            // Obtiene el texto ingresado en la barra de búsqueda
+            var input = document.getElementById('busqueda');
+            var filtro = input.value.toUpperCase();
+
+            // Obtiene la lista de vinos
+            var lista = document.getElementById('listaVinos');
+            var vinos = lista.getElementsByTagName('li');
+
+            // Itera sobre los vinos y muestra u oculta según el filtro
+            for (var i = 0; i < vinos.length; i++) {
+                var nombre = vinos[i].textContent || vinos[i].innerText;
+                if (nombre.toUpperCase().indexOf(filtro) > -1) {
+                    vinos[i].style.display = "";
+                } else {
+                    vinos[i].style.display = "none";
+                }
+            }
+        }
+
+        // Función para agregar un vino al carrito de compras
+        function agregarAlCarrito(nombreVino) {
+            // Crea un nuevo elemento de lista
+            var item = document.createElement('li');
+            item.textContent = nombreVino;
+
+            // Agrega el elemento al carrito de compras
+            var carrito = document.getElementById('carrito');
+            carrito.appendChild(item);
+        }
+    </script>
+
+
+
+
+    
+ 
+
+           
+      
+
+
+
+
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" alt="Ridex logo">
+          </a>
+
+          <p class="footer-text">
+            Héritage d’Or: Elegancia en cada gota de vino
+          </p>
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Compañia</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Sobre nosotros</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Categorias</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Nuestro Blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contacto</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Ayuda</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Centro de ayuda</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Preguntas</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Politica de privacidad</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Términos y Condiciones</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Otras surcursales</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">JLBYR</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Yanahuara</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Cayma</a>
+          </li>
+
+         
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-skype"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <p class="copyright">
+          &copy; 2023 <a href="#">Copyright AAA</a>. All Rights Reserved
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+
+</body>
+</html>
+
+
+   
