@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iniciar sesión / Registro</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor-formularios">
+        <h1>Sistema de Compra</h1> <!-- Mueve el título dentro del contenedor -->
+        <div class="formulario-login">
+            <h2>Iniciar sesión</h2>
+            <form action="login.php" method="post">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+                <br>
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+                <br>
+                <button type="submit">Iniciar sesión</button>
+                <br>
+                <a href="#">Olvidé mi contraseña</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
