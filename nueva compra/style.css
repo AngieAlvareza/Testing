@@ -1,0 +1,100 @@
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Estilo para la cabecera */
+header {
+  padding: 1rem 2rem;
+  background-color: #f0f0f0;
+  display: flex; /* Esto es para asegurar que los elementos secundarios estén en una fila */
+  justify-content: space-between; /* Esto distribuye los elementos en la fila */
+  align-items: center; /* Esto alinea verticalmente los elementos */
+}
+
+/* Estilo para el contenedor de la cabecera */
+.header-grid {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; /* Esto distribuye los elementos de forma uniforme en la fila */
+  align-items: center; /* Esto alinea verticalmente los elementos */
+}
+
+/* Estilo para los elementos de la cabecera */
+.header-item {
+  margin: 0 1rem; /* Esto agrega espacio entre los elementos */
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  text-align: left; /* Alinea el título a la izquierda */
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  padding: 1rem 2rem;
+}
+.product-table {
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%; /* Make the table occupy full width */
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.new-purchase,
+.search-product,
+.order-summary {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.search-product input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.order-summary {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.order-summary-item,
+.order-summary p {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.btn-continue-purchase {
+  display: block;
+  margin: 1rem auto;
+  padding: 1rem 2rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
