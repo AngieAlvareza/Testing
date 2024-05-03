@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="registro.css">
+  <title>Registro - Héritage d'Or</title>
+</head>
+<body>
+    <script>
+        function validarRegistro() {
+            var usuario = document.getElementById("usuario").value;
+            var email = document.getElementById("email").value;
+            var contrasena = document.getElementById("contrasena").value;
+            var confirmarContrasena = document.getElementById("confirmarContrasena").value;
+            
+            // Verificar si todos los campos están completos y si las contraseñas coinciden
+            if (usuario !== "" && email !== "" && contrasena !== "" && confirmarContrasena !== "" && contrasena === confirmarContrasena) {
+                // Registro exitoso, redirigir al usuario a la página deseada
+                return true;
+            } else {
+                alert("Por favor, completa todos los campos y asegúrate de que las contraseñas coincidan.");
+                return false; // Evita el envío del formulario si los campos no están completos o las contraseñas no coinciden
+            }
+        }
+    </script>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form method="post" action="login.html" onsubmit="return validarRegistro()">
+                    <h2>Registro</h2>
+                    <div class="inputbox">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <input type="text" required id="usuario" name="usuario">
+                        <label for="">usuario</label>
+                    </div>                    
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" required id="email" name="email">
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required id="contrasena" name="contrasena">
+                        <label for="">Contraseña</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required id="confirmarContrasena" name="confirmarContrasena">
+                        <label for="">Confirmar Contraseña</label>
+                    </div>
+                    <button type="submit">Registrarse</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
