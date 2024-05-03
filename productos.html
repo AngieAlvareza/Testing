@@ -43,7 +43,7 @@
               </li>
     
               <li>
-                <a href="historial.html" class="navbar-link" data-nav-link>Mis compras</a>
+                <a href="miscompras.html" class="navbar-link" data-nav-link>Mis compras</a>
               </li>
               
     
@@ -88,10 +88,10 @@
             <div class="container">
     
               <div class="hero-content">
-                <h2 class="h1 hero-title">Bodega Héritage d'Or</h2>
+                <h2 class="h1 hero-title">Productos de Bodega Héritage d'Or</h2>
     
                 <p class="hero-text">
-                  ¡Bienvenido a DOR! Explora nuestra selección de vinos de calidad.
+                  Explora nuestra selección de vinos de calidad.
                 </p>
               </div>
     
@@ -186,8 +186,8 @@
     <h2>Carrito de Compras</h2>
     <ul id="carrito"></ul>
     <div id="totalContainer">Total: $0</div>
-    <button onclick="pagar()" id="pagarButton">Pagar</button>
-
+    <button onclick="pagar()" id="pagarButton">Pagar forma rapida </button>
+    <button onclick="generarBoleta()" id="pagarButton">Pagar</button>
     <script>
         // Función para filtrar los vinos por nombre
         function buscarVinos() {
@@ -258,6 +258,29 @@
         totalContainer.textContent = 'Total: $0';
     }
 
+    // Función para generar la boleta
+    function generarBoleta() {
+            // Obtener el total actual
+            var totalContainer = document.getElementById('totalContainer');
+            var total = parseFloat(totalContainer.textContent.replace('Total: $', ''));
+
+            // Calcular el IGV (18%)
+            var igv = total * 0.18;
+
+            // Calcular el total con IGV
+            var totalConIgv = total + igv;
+
+            // Obtener la lista de productos del carrito
+            var carrito = document.getElementById('carrito').innerHTML;
+
+            // Almacenar los datos en el almacenamiento local para usar en la página de la boleta
+            localStorage.setItem('total', totalConIgv);
+            localStorage.setItem('productos', carrito);
+
+            // Redirigir a la página de la boleta
+            window.location.href = 'boleta.html';
+        }
+
 
     </script>
 
@@ -307,7 +330,7 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">Sobre nosotros</a>
+            <a href="GrekiPrincipal.html" class="footer-link">Tabla de Compras</a>
           </li>
 
           <li>
