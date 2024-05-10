@@ -98,8 +98,39 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
+  }
+  
 
-.btn-continue-purchase:hover {
-    background-color: #074467;
-}
+    .container-botones { 
+    display: flex; 
+    justify-content: center; 
+    margin-top: 1rem; 
+  }
+
+   .button-container {
+    display: flex; /* Establece el modo de flexbox */
+    justify-content: center; /* Centra los botones horizontalmente */
+    margin: 0 auto; /* Añade un margen automático para centrar el contenedor */
+    padding: 20px; /* Espacio alrededor del contenedor */
+  }
+  
+  /* Estilo para los botones */
+  .btn-factura,
+  .btn-boleta {
+    margin: 0 0.5rem; /* Espaciado entre botones */
+    padding: 0.75rem 1.5rem; /* Aumenta el tamaño del padding */
+    font-size: 1rem; /* Tamaño de fuente */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #074467; /* Color de fondo azul */
+    color: #fff; /* Color de texto blanco */
+    border: none; /* Sin bordes */
+    cursor: pointer; /* Cursor de puntero al pasar por encima */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+  }
+  
+  /* Efecto hover para los botones */
+  .btn-factura:hover,
+  .btn-boleta:hover {
+    background-color: #0056b3; /* Color de fondo más oscuro al pasar por encima */
+  }
+  

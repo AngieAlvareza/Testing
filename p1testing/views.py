@@ -39,6 +39,11 @@ def PerfilView(request):
     #return HttpResponse("Hola mundo")
     return render(request, "perfil.html")
 
+def CompraView(request):
+    #Página principal
+    #return HttpResponse("Hola mundo")
+    return render(request, "compra.html")
+
 # def loginView(request):
 #     #Página principal
 #     #return HttpResponse("Hola mundo")
