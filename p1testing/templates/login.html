@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static "login.css" %}">
+  <title>Héritage d'Or</title>
+</head>
+<body>
+    <script>
+        function validarFormulario() {
+            var usuario = document.getElementById("usuario").value;
+            var contrasenia = document.getElementById("contrasenia").value;
+        
+            // Verificar si el usuario y la contraseña son correctos
+            if (usuario === "admin" && contrasenia === "admin") {
+                // Redirigir al usuario a la página deseada
+                return true;
+            } else {
+                alert("Usuario o contraseña incorrectos. Por favor, inténtalo de nuevo.");
+                return false; // Evita el envío del formulario si las credenciales son incorrectas
+            }
+        }
+    </script>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form method="post" action="perfil.html" onsubmit="return validarFormulario()">
+                    <h2>Iniciar Sesión</h2>
+                    <div class="inputbox">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <input type="text" required id="usuario" name="usuario">
+                        <label for="">Usuario</label>
+                    </div>                    
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required id="contrasena" name="contrasena">
+                        <label for="">Password</label>
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Remember Me  <a href="#">Olvidaste tu contraseña?</a></label>
+                      
+                    </div>
+                    <div class="register">
+                        <p>¿No tienes una cuenta? <a href="registro.html">Regístrate</a></p>
+                    </div>
+                    <button>Iniciar Sesión</button>
+                </form>
+            </div>
+        </div>
+</body>
+</html>

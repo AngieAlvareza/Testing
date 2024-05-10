@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping System</title>
+    <link rel="stylesheet" href="{% static "estiloShoppingSystem.css" %}">
+</head>
+<!-- <body>
+    <h1>Hola comunidad</h1>
+    <script scr="{% static "script.js" %}"></script>
+</body>
+</html> -->
+<body>
+  <header>
+    <h1>Sistema de compras</h1>
+  </header>
+  <main>
+    <div class="search-bar">
+      <label for="search-date-from">Fecha de:</label>
+      <input type="date" id="search-date-from" name="search-date-from">
+      <label for="search-date-to">Hasta:</label>
+      <input type="date" id="search-date-to" name="search-date-to">
+      <button type="button" onclick="searchPurchases()">Buscar compra</button>
+      <button type="button" onclick="openNewPurchase()">Nueva compra</button>
+    </div>
+    <div class="purchases-table-container">
+      <table id="purchases-table">
+        <thead>
+          <tr>
+            <th>N°</th>
+            <th>Fecha</th>
+            <th>Tipo Doc.</th>
+            <th>No. Documento</th>
+            <th>Proveedor</th>
+            <th>Tipo de pago</th>
+            <th>Total</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          </tbody>
+      </table>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
