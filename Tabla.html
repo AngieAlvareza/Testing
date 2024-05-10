@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Compra</title>
+  <link rel="stylesheet" href="Tabla.css">
+</head>
+<body>
+    <header>
+        <div class="header-grid">
+            <h1>Sistema de Compra</h1> <!-- Título principal -->
+            <div class="header-item">Fecha/fecha/fecha</div>
+            <div class="header-item">Perfil</div>
+            <div class="header-item"><a href="index.html">LogOut</a></div> <!-- Agrega el enlace -->
+        </div>
+    </header>
+
+  <main>
+    <div class="main-grid">
+      <!-- Sección izquierda: Tabla de productos -->
+      <section class="product-table">
+        <h2>Nueva Compra</h2>
+        <section class="search-product">
+          <h3>Buscar producto</h3>
+          <input type="text" placeholder="Buscar producto">
+        </section>
+        <section class="product-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Código</th>
+                  <th>Nombre</th>
+                  <th>Descripción</th>
+                  <th>Precio</th>
+                  <th>Cantidad</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </section>
+        
+      </section>
+      
+      <!-- Sección derecha: Resumen de la orden -->
+      <section class="order-summary">
+        <h3>Resumen de la orden</h3>
+        <p>Productos (#)</p>
+        <p>Total</p>
+        <a href="boleta.html"><button class="btn-continue-purchase">Continuar compra</button></a> <!-- Modificado el botón para que redireccione a boleta.html -->
+      </section>
+    </div>
+  </main>
+</body>
+</html>
