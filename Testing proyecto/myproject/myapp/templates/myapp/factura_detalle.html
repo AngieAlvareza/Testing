@@ -1,0 +1,24 @@
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/lista.css' %}">
+<h1>Factura</h1>
+<p>Proveedor: {{ factura.proveedor.nombre }}</p>
+<p>Fecha de Emisión: {{ factura.fecha_emision }}</p>
+<p>Total: {{ factura.total }}</p>
+<table>
+    <tr>
+        <th>Producto</th>
+        <th>Cantidad</th>
+        <th>Precio Unitario</th>
+        <th>Subtotal</th>
+    </tr>
+    {% for detalle in detalles %}
+    <tr>
+        <td>{{ detalle.producto.nombre }}</td>
+        <td>{{ detalle.cantidad }}</td>
+        <td>{{ detalle.precio }}</td>
+        <td>{{ detalle.subtotal }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<button onclick="window.print()">Imprimir Factura</button>

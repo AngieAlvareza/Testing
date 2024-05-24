@@ -1,0 +1,20 @@
+{% load static %}
+<h1>Lista de Productos</h1>
+<link rel="stylesheet" href="{% static 'css/lista.css' %}">
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Precio</th>
+        <th>Cantidad en Stock</th>
+    </tr>
+    {% for producto in productos %}
+    <tr>
+        <td>{{ producto.nombre }}</td>
+        <td>{{ producto.descripcion }}</td>
+        <td>{{ producto.precio }}</td>
+        <td>{{ producto.cantidad }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<a href="{% url 'hacer_pedido' %}">Hacer Pedido</a>

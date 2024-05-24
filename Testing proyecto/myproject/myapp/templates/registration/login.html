@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'images/imagenVinoPortada.jpg' %}" no-repeat center center fixed>
+    <link rel="stylesheet" href="{% static 'css/styles_login.css' %}">
+    <title>Login</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Login</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
